@@ -42,8 +42,8 @@ def play_battleship(board_size, num_ships, num_turns):
     for turn in range(num_turns):
         print(f"Turn {turn+1}")
         print_board(board)
-        guess_row = int(input("Guess Row: ")) -1
-        guess_col = int(input("Guess Col: ")) -1
+        guess_row = int(input("Guess Row: \n")) -1
+        guess_col = int(input("Guess Col: \n")) -1
         
         
         if guess_row < 0 or guess_row >= board_size or guess_col < 0 or guess_col >= board_size:
